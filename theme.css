@@ -1,13 +1,32 @@
+/*define palette colors here*/
+:root {
+	--theme-dark-1: #1e1e1e;	/*page bg*/
+	--theme-dark-2: #2e2e2e;	/*ui bg*/
+	--theme-dark-3: #514030;	/*divider color*/
+	--theme-light-1: #f7e7d7;
+	--theme-light-2: #d9c5b0;
+	--theme-light-3: #98785a;
+
+	--theme-icon-color: #ff8383;
+}
+
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--font-text-theme: Montserrat, sans-serif;
+	--icon-color: var(--theme-icon-color);
+}
+
+.theme-dark {
+	--background-primary: var(--theme-dark-1);
+	--background-secondary: var(--theme-dark-2);
+	--divider-color: var(--theme-dark-3);
+	--scrollbar-thumb-bg: var(--theme-dark-3);
+}
+
+.theme-light{
+	--background-primary: var(--theme-light-1);
+	--background-secondary: var(--theme-light-2);
+	--divider-color: var(--theme-light-3);
+	--scrollbar-thumb-bg: var(--theme-light-3);
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
